@@ -35,7 +35,9 @@ module.exports = {
 								return '[path][name].[ext]';
 							},
 							publicPath: function (url) {
-								return url.replace('../', './assets/');
+								const path = url.replace('../', './dist/assets/');
+								console.log(path);
+								return path;
 							},
 							esModule: false,
 						},
